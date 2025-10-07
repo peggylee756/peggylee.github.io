@@ -1,179 +1,164 @@
-Skip to content
- 
-Search Gists
-Search...
-All gists
-Back to GitHub
-@chrisvfritz
-chrisvfritz/index.html
-Created 11 years ago • Report abuse
-Code
-Revisions
-1
-Stars
-154
-Forks
-111
-Clone this repository at &lt;script src=&quot;https://gist.github.com/chrisvfritz/bc010e6ed25b802da7eb.js&quot;&gt;&lt;/script&gt;
-<script src="https://gist.github.com/chrisvfritz/bc010e6ed25b802da7eb.js"></script>
-Simplest possible HTML template
-index.html
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+      <h3>John Doe</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <h3>Jane Doe</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+      <h3>Mike Ross</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+      <h3>Dan Star</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
 </html>
-Load earlier comments...
-@BramHaan
-BramHaan commented on Jan 18, 2024
-how do you put in an image
-
-just 
-
-@BramHaan
-BramHaan commented on Jan 18, 2024
-noo
-
-@BramHaan
-BramHaan commented on Jan 18, 2024
-
-
-@BramHaan
-BramHaan commented on Jan 18, 2024
-@chrisvfritz
-
-@BramHaan
-BramHaan commented on Jan 18, 2024
-lol
-
-@BramHaan
-BramHaan commented on Jan 18, 2024
-@BramHaan
-
-@BramHaan
-BramHaan commented on Jan 18, 2024
-lollll
-
-@BramHaan
-BramHaan commented on Jan 18, 2024
-@BramHaan
-
-@BramHaan
-BramHaan commented on Jan 18, 2024
-/lolllllllllllllllllllllllllllll
-
-@tinkeristgit
-tinkeristgit commented on Jan 18, 2024 via email 
-Hou eens op man, mongoolOp 18 jan 2024 om 18:52 heeft BramHaan ***@***.***> het volgende geschreven:﻿Re: ***@***.*** commented on this gist.—Reply to this email directly, view it on GitHub or unsubscribe.You are receiving this email because you commented on the thread.Triage notifications on the go with GitHub Mobile for iOS or Android.                                                           
-@sophie5555
-sophie5555 commented on Mar 5, 2024
-Gooood Thanks 🥳🥳
-
-@LinkingWizard
-LinkingWizard commented on Mar 5, 2024
-This has become a chatroom for the lost and confused
-
-@kmboyle
-kmboyle commented on Mar 28, 2024
-pure....magic
-
-@F-alling
-F-alling commented on May 23, 2024
-51
-
-@Pl4stICA
-Pl4stICA commented on Jun 3, 2024
-Nice, Thank you!
-
-@kiraje
-kiraje commented on Jul 1, 2024
-Nice
-
-@thanh-giang
-thanh-giang commented on Jul 2, 2024
-52
-
-@nirness
-nirness commented on Jul 4, 2024
-42
-
-@alex-svrdnk
-alex-svrdnk commented on Jul 9, 2024
-69
-
-@romanm12
-romanm12 commented on Aug 8, 2024
-Looks nice! So? Am I student 🧑‍🎓 or its enough to be called coder?
-
-@DedrickFritsch
-DedrickFritsch commented on Aug 29, 2024
-The audio design in Merge Fruit adds perfectly for the gameplay, with playful melodies and sound effects that are satisfied with each combination. This hearing feedback creates another interesting layer, making each game useful.The audio design in Merge Fruit adds perfectly for the gameplay, with playful melodies and sound effects that are satisfied with each combination. This hearing feedback creates another interesting layer, making each game useful.
-
-@RulerOf
-RulerOf commented on Jan 25
-I found this in the wild on a website. I was looking for a breakfast menu though. 0/10.
-
-@BramHaan
-BramHaan commented on Jan 25 via email 
-I posted this when i was like 5. Can you guys pls stop posting abt it?
-
-Op za 25 jan 2025 17:43 schreef Andrew Bobulsky ***@***.***>:
-…
-@ErikUden
-ErikUden commented on Feb 1
-Great gist. Thank you.
-
-@yinstardev
-yinstardev commented on Feb 24
-Damn this helped me validate vercel deployment on private repo also can be made public. Great wisdom.
-Holy HTML snippet.
-
-@mpalmero197
-mpalmero197 commented on Mar 14
-May all who are lost seek comfort in this text.
-
-@rockstareast2
-rockstareast2 commented on Mar 14
-Thanks
-
-@hexcolors
-hexcolors commented on Apr 12
-Thanks :)
-
-@airobus
-airobus commented on Aug 18
-Awesome list, Chris! Thanks for putting this together. It's great to see so many quality projects and resources in one place.
-
-Speaking of cool open-source projects, I recently came across a really well-made puzzle game that's perfect for a quick mental break from coding. It's called Enhanced Queens Game.
-
-It's a clever take on the classic Queens logic puzzle, but with some unique new rules like colored regions that add a surprising amount of strategic depth. The UI is super clean, and it's built with Next.js/React.
-
-If anyone is looking for a new brain-teaser, you can check it out here: Enhanced Queens Game.
-
-Cheers!
-
-@BramHaan
-BramHaan commented 2 weeks ago
-hmmmm why is this still here?
-
-@peggylee756
-Comment
- 
-Leave a comment
- 
-Footer
-© 2025 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Community
-Docs
-Contact
-Manage cookies
-Do not share my personal information
